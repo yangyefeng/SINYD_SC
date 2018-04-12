@@ -1,0 +1,16 @@
+---- ISocketWorker Matches (15 in 2 files) ----
+SocketThread.h (sinyd_datatransfer):class ISocketWorker
+SocketThread.h (sinyd_datatransfer):	virtual ~ISocketWorker(){}
+SocketThread.h (sinyd_datatransfer):	/// @name:   ISocketWorker::setIP
+SocketThread.h (sinyd_datatransfer):	/// @name:   ISocketWorker::preWorker
+SocketThread.h (sinyd_datatransfer):	/// @name:   ISocketWorker::runWorker
+SocketThread.h (sinyd_datatransfer):	/// @name:   ISocketWorker::postWorker
+SocketThread.h (sinyd_datatransfer):class CSocketWorker : public ISocketWorker
+SocketThread.h (sinyd_datatransfer):    CSocketThread(std::tr1::shared_ptr<ISocketWorker> sp_worker)
+SocketThread.h (sinyd_datatransfer):    std::tr1::shared_ptr<ISocketWorker> m_sp_worker;
+SYDDataTransferImpl.cpp (sinyd_datatransfer):    std::tr1::shared_ptr<ISocketWorker> raw_worker(new CSocketWorker(raw_reader, raw_ret_exec));
+SYDDataTransferImpl.cpp (sinyd_datatransfer):    std::tr1::shared_ptr<ISocketWorker> measure_worker(new CSocketWorker(measure_reader, measure_ret_exec));
+SYDDataTransferImpl.cpp (sinyd_datatransfer):    std::tr1::shared_ptr<ISocketWorker> detail_worker(new CSocketWorker(detail_reader, detail_ret_exec));
+SYDDataTransferImpl.cpp (sinyd_datatransfer):    std::tr1::shared_ptr<ISocketWorker> raw_worker(new CSocketWorker(raw_reader, raw_ret_exec));
+SYDDataTransferImpl.cpp (sinyd_datatransfer):    std::tr1::shared_ptr<ISocketWorker> measure_worker(new CSocketWorker(measure_reader, measure_ret_exec));
+SYDDataTransferImpl.cpp (sinyd_datatransfer):    std::tr1::shared_ptr<ISocketWorker> detail_worker(new CSocketWorker(detail_reader, detail_ret_exec));

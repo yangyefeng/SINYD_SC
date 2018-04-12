@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{11127271-DABA-4D12-9E15-C7F602D70CD1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>SINYD_Measure</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;SINYD_MEASURE_EXPORTS;%(PreprocessorDefinitions);MESURELOGIC_DLL_EXPORT</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)InterfaceInclude;$(SolutionDir)Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;SINYD_MEASURE_EXPORTS;%(PreprocessorDefinitions);MESURELOGIC_DLL_EXPORT</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)InterfaceInclude;$(SolutionDir)Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;SINYD_MEASURE_EXPORTS;%(PreprocessorDefinitions);MESURELOGIC_DLL_EXPORT</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)InterfaceInclude;$(SolutionDir)Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;SINYD_MEASURE_EXPORTS;%(PreprocessorDefinitions);MESURELOGIC_DLL_EXPORT</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)InterfaceInclude;$(SolutionDir)Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\InterfaceInclude\CopyFile.h" />
+    <ClInclude Include="..\InterfaceInclude\Measure.h" />
+    <ClInclude Include="..\InterfaceInclude\MeasureDef.h" />
+    <ClInclude Include="Data\data_node_valuemgr.h" />
+    <ClInclude Include="Data\Include\Operation_conf.h" />
+    <ClInclude Include="Data\RWData\RWData.h" />
+    <ClInclude Include="Include\DebugLogger.h" />
+    <ClInclude Include="Include\EmsasCommon.h" />
+    <ClInclude Include="Include\SwDscuMmdef.h" />
+    <ClInclude Include="main\abstract_algorithm.h" />
+    <ClInclude Include="main\data_algorithm\data_algorithm.h" />
+    <ClInclude Include="main\data_collector.h" />
+    <ClInclude Include="main\data_node.h" />
+    <ClInclude Include="main\data_node\hopper_node.h" />
+    <ClInclude Include="main\data_node\hopper_product.h" />
+    <ClInclude Include="main\data_node\mixer_node.h" />
+    <ClInclude Include="main\data_node\multivalued_hopper_node.h" />
+    <ClInclude Include="main\data_node\rawdb_recorder.h" />
+    <ClInclude Include="main\data_node\raw_recorder.h" />
+    <ClInclude Include="main\data_node\valuedbytap_hopper_node.h" />
+    <ClInclude Include="main\data_node\valued_hopper_node.h" />
+    <ClInclude Include="main\data_provider.h" />
+    <ClInclude Include="main\data_provider\analog_calibrator.h" />
+    <ClInclude Include="main\data_provider\can_data_provider.h" />
+    <ClInclude Include="main\data_provider\rawdb_playback.h" />
+    <ClInclude Include="main\data_provider\rawfile_playback.h" />
+    <ClInclude Include="main\data_provider\sc_data_provider.h" />
+    <ClInclude Include="main\machine_loader.h" />
+    <ClInclude Include="main\machine_loader\cement_machine_loader.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Tool\syd_record_file.h" />
+    <ClInclude Include="Tool\syd_time.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Data\data_node_valuemgr.cpp" />
+    <ClCompile Include="Data\RWData\RWData.cpp" />
+    <ClCompile Include="main\abstract_algorithm.cpp" />
+    <ClCompile Include="main\data_algorithm\data_algorithm.cpp" />
+    <ClCompile Include="main\data_collector.cpp" />
+    <ClCompile Include="main\data_node.cpp" />
+    <ClCompile Include="main\data_node\hopper_node.cpp" />
+    <ClCompile Include="main\data_node\hopper_product.cpp" />
+    <ClCompile Include="main\data_node\mixer_node.cpp" />
+    <ClCompile Include="main\data_node\multivalued_hopper_node.cpp" />
+    <ClCompile Include="main\data_node\rawdb_recorder.cpp" />
+    <ClCompile Include="main\data_node\raw_recorder.cpp" />
+    <ClCompile Include="main\data_node\valuedbytap_hopper_node.cpp" />
+    <ClCompile Include="main\data_node\valued_hopper_node.cpp" />
+    <ClCompile Include="main\data_provider.cpp" />
+    <ClCompile Include="main\data_provider\analog_calibrator.cpp" />
+    <ClCompile Include="main\data_provider\can_data_provider.cpp" />
+    <ClCompile Include="main\data_provider\rawdb_playback.cpp" />
+    <ClCompile Include="main\data_provider\rawfile_playback.cpp" />
+    <ClCompile Include="main\data_provider\sc_data_provider.cpp" />
+    <ClCompile Include="main\machine_loader.cpp" />
+    <ClCompile Include="main\machine_loader\cement_machine_loader.cpp" />
+    <ClCompile Include="Measure.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Tool\syd_record_file.cpp" />
+    <ClCompile Include="Tool\syd_time.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CppSqlite3\CppSqlite3.vcxproj">
+      <Project>{880e3b3d-b703-42ab-bfa7-f5281b24929f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\lib_Json\lib_json.vcxproj">
+      <Project>{1e6c2c1c-6453-4129-ae3f-0ee8e6599c89}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SINYD_DataTransfer\SINYD_DataTransfer.vcxproj">
+      <Project>{fe91da69-9fdf-40d4-96d0-68fc3f41deaa}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SINYD_DBModule\SINYD_DBModule.vcxproj">
+      <Project>{01da9f25-4d35-4056-b986-021d43a88d31}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\TinyXML2\TinyXML2.vcxproj">
+      <Project>{e616b75c-aab6-43fa-bd31-c8dd9c5b614b}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SINYD_Measure.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
